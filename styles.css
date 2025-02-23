@@ -604,7 +604,7 @@ header nav a:hover {
 
   
   .article-wrapper:hover {
-    -webkit-box-shadow: 10px 10px 0 #4e84ff, 20px 20px 0 #bd44a9;
+    -webkit-box-shadow: 10px 10px 0 var(--primarylight), 20px 20px 0 var(--primary);
     box-shadow: 10px 10px 0 var(--primarylight), 20px 20px 0 var(--primary);
     border-color: #D7942E;
     -webkit-transform: translate(-20px, -20px);
@@ -728,12 +728,37 @@ header nav a:hover {
   object-fit: cover;
 }
 
+.article-wrapper-no {
+  width: 450px;
+  border-radius: 10px;
+  padding: 5px;
+  margin-inline: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 4px solid transparent;
+  background-color: white;
+  display: inline-block;
+  border-color: #D7942E;
+}
+
+
 @media screen and (max-width: 768px) {
   .project-hero{
       height: 400px;
       padding-bottom: 0px;
   }
+
+  .article-wrapper-no {
+    width: 400px;
+    margin-inline: 1px;
+  }
 }
+
+/* #region gallery */
+
+
+
+/* #endregion */
 
 footer {
     background: var(--black);
