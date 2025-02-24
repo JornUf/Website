@@ -607,6 +607,8 @@ header nav a:hover {
     cursor: pointer;
     background-color: white;
     display: inline-block;
+    max-width: 100vw;;
+    overflow: hidden;
   }
 
   @media screen and (max-width: 768px) {
@@ -619,6 +621,7 @@ header nav a:hover {
     .article-wrapper {
         width: 400px;
         margin-inline: 1px;
+        max-width: 100vw;
       }
   }
 
@@ -763,7 +766,8 @@ header nav a:hover {
   background-color: white;
   display: inline-block;
   border-color: #D7942E;
-  
+  max-width: 100vw;
+  overflow: hidden;
 }
 
 
@@ -776,6 +780,16 @@ header nav a:hover {
   .article-wrapper-no {
     width: 400px;
     margin-inline: 1px;
+    max-width: 100vw;
+  }
+}
+
+@media screen and (max-width: 450px) {
+
+  .article-wrapper-no {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
   }
 }
 
