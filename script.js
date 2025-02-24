@@ -6,6 +6,24 @@ let main = document.querySelector('main');
 let lengthItems = items.length - 1;
 let active = 0;
 
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+
+for (i = 0; i < coll.length; i++) {
+    coll[i].click();
+  }
 
 moveright = function(){
     active = active + 1 <= lengthItems ? active + 1 : 0;
@@ -45,6 +63,3 @@ document.addEventListener('DOMContentLoaded', () => {
         main.classList.toggle('blurred');
     });
 });
-
-
-

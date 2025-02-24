@@ -363,6 +363,7 @@ header nav a:hover {
     color: var(--secondary);
     text-align: center;
     position: relative;
+    box-shadow: 0px 1px 10px 1px var(--black);
 }
 
 .slider {
@@ -537,6 +538,7 @@ header nav a:hover {
     color: var(--white);
     max-height: 500px;
     object-fit: cover;
+    box-shadow: 0px 1px 10px 1px var(--black);
 }
 
 .section img {
@@ -565,6 +567,17 @@ header nav a:hover {
     padding-left: 10vw;
     padding-right: 10vw;
     text-align: center;
+    
+}
+
+.projects-content{
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.game-details-page .projects-display{
+  padding-top: 30px;
 }
 
 .projects-display h1{
@@ -572,6 +585,12 @@ header nav a:hover {
     color: var(--secondary);
     box-shadow: 5px 5px var(--secondary);
     border-radius: 5px;
+}
+
+.collapsible:hover{
+  cursor: pointer;
+  translate: 5px 5px;
+  box-shadow: 0px 0px;
 }
 
 .article-wrapper {
@@ -713,6 +732,8 @@ header nav a:hover {
   color: var(--secondary);
   text-align: center;
   position: relative;
+  box-shadow: 0px 1px 10px 1px var(--black);
+
 }
 .project-hero img{
   width: 100vw;
