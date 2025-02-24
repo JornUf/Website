@@ -572,6 +572,7 @@ header nav a:hover {
 }
 
 .projects-content{
+  padding-top: 10px;
   max-height: 0px;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
