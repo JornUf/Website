@@ -462,11 +462,12 @@ header nav a:hover {
         /* learn more button on the hero */
         .button-cool {
 
-            position: relative;
-            top: 10vh;
+            position: absolute;
+            top: 15vh;
             left: 25vw;
             background: var(--black);
             display: inline-block;
+            width: 20vw;
             background-size: 200% auto;
             border: 1px solid;
             border-radius: 25px;
@@ -518,8 +519,10 @@ header nav a:hover {
 
 @media screen and (max-width: 768px) {
     .button-cool{
-        left: 15vw;
-        font-size: 12px;
+      top: 10vh;
+        left: 18vw;
+        font-size: 16px;
+        width: auto;
     }
     .slider {
         height: 400px;
