@@ -9,6 +9,7 @@ let active = 0;
 var coll = document.getElementsByClassName("collapsible");
 var i;
 
+//collapsible
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
     this.classList.toggle("active");
@@ -25,9 +26,16 @@ for (i = 0; i < coll.length; i++) {
     coll[i].click();
   }
 
+
+  //hero stuff
 moveright = function(){
+  if(document.querySelector(".hero:hover") == null){
     active = active + 1 <= lengthItems ? active + 1 : 0;
     reloadSlider();
+  }
+  else{
+    moveright();
+  }
 }
 
 let refreshInterval = setInterval(()=> {moveright()}, 3000);
@@ -40,8 +48,6 @@ function reloadSlider(){
 
     clearInterval(refreshInterval);
     refreshInterval = setInterval(()=> {moveright()}, 3000);
-
-    
 }
 
 dots.forEach((li, key) => {
@@ -54,6 +60,7 @@ window.onresize = function(event) {
     reloadSlider();
 };
 
+//burger
 document.addEventListener('DOMContentLoaded', () => {
     const menuToggle = document.querySelector('.burger');
     const navLinks = document.querySelector('.nav-links');
