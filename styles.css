@@ -645,6 +645,109 @@ width: auto;
   }
 }
 
+.sectionR {
+  padding: 0rem;
+  display: flex;
+  align-items: center;
+  background-color: var(--primary);
+  color: var(--white);
+  max-height: 500px;
+  object-fit: cover;
+  box-shadow: 0px 1px 10px 1px var(--black);
+  padding-left: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  min-height: 400px;
+}
+
+.sectionR img {
+  display: block;
+  width: 45%;
+  border-radius: 8px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  margin-left: auto;
+  object-fit: cover;
+}
+
+.sectionR h2{
+color: var(--secondary);
+padding-bottom: 5px;
+}
+
+.sectionM {
+  padding: 0rem;
+  display: none;
+  align-items: center;
+  background-color: var(--primary);
+  color: var(--white);
+  max-height: 500px;
+  object-fit: cover;
+  box-shadow: 0px 1px 10px 1px var(--black);
+  padding-left: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  min-height: 400px;
+}
+
+.sectionM h2{
+color: var(--secondary);
+padding-bottom: 5px;
+}
+.team{
+  border-left-style: solid;
+  border-color: var(--secondary);
+  border-width: 5px;
+  margin-left: auto;
+  padding-left: 10px;
+  min-width: 300px;
+}
+
+.sectionR a{
+  color: var(--secondary);
+}
+
+.sectionR a:hover{
+  color: var(--primarylight);
+}
+
+.sectionM a{
+  color: var(--secondary);
+}
+
+.sectionM a:hover{
+  color: var(--primarylight);
+}
+
+@media screen and (max-width: 1200px) {
+.sectionR img{
+  display: none;
+}
+
+.sectionR{
+  max-height: 100vh;
+}
+}
+
+@media screen and (max-width: 768px) {
+  .details{
+    display: none;
+  }
+  
+  .sectionM{
+    display: flex;
+    max-height: 100vh;
+  }
+
+  .sectionM p{
+    margin-right: 5px;
+  }
+
+  .team{
+    margin-left: 0px;
+  }
+}
+
 /* projects */ 
 
 .projects-display{
@@ -691,12 +794,32 @@ width: auto;
     overflow: hidden;
   }
 
+  .projects-displayF{
+    padding-left: 10vw;
+    padding-right: 10vw;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.projects-displayF h1{
+  background-color: var(--primary);
+  color: var(--secondary);
+  box-shadow: 5px 5px var(--secondary);
+  border-radius: 5px;
+}
+
   @media screen and (max-width: 768px) {
     .projects-display{
         padding-left: 1vw;
         padding-right: 1vw;
         text-align: center;
     }
+
+    .projects-displayF{
+      padding-left: 1vw;
+      padding-right: 1vw;
+      text-align: center;
+  }
 
     .article-wrapper {
         width: 400px;
