@@ -117,7 +117,7 @@ var div2 = document.getElementById("nrpro");
 //Set up ne instance of that class
 var iterator2 = new NumberIterator();
 //Configure waypoints
-iterator2.goals = [20];
+iterator2.goals = [25];
 
 iterator2.delay = 1000 / iterator2.goals[0];
 //On step callback
