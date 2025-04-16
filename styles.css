@@ -621,7 +621,6 @@ width: auto;
     align-items: center;
     background-color: var(--primary);
     color: var(--white);
-    max-height: 500px;
     object-fit: cover;
     box-shadow: 0px 1px 10px 1px var(--black);
 }
@@ -644,6 +643,9 @@ width: auto;
   .section h1{
     font-size: 20px;
   }
+  .section h2{
+    font-size: 1em;
+  }
 }
 
 .sectionR {
@@ -652,24 +654,31 @@ width: auto;
   align-items: center;
   background-color: var(--primary);
   color: var(--white);
-  max-height: 500px;
+  max-height: none;
   object-fit: cover;
   box-shadow: 0px 1px 10px 1px var(--black);
-  padding-left: 30px;
   margin-top: 30px;
   margin-bottom: 30px;
-  min-height: 400px;
+  min-height: 40px;
+  max-height: max-content;
+  overflow-wrap: break-word;
+}
+
+.detailimages{
+  position: relative;
+  right: 0px;
 }
 
 .sectionR img {
   display: block;
-  width: 45%;
+  width: 100%;
   border-radius: 8px;
-  border-top-left-radius: 0px;
-  border-bottom-left-radius: 0px;
-  margin-left: auto;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
   object-fit: cover;
 }
+
+
 
 .sectionR h2{
 color: var(--secondary);
@@ -682,13 +691,14 @@ padding-bottom: 5px;
   align-items: center;
   background-color: var(--primary);
   color: var(--white);
-  max-height: 500px;
   object-fit: cover;
   box-shadow: 0px 1px 10px 1px var(--black);
   padding-left: 30px;
   margin-top: 30px;
   margin-bottom: 30px;
   min-height: 400px;
+  overflow-wrap: break-word;
+
 }
 
 .sectionM h2{
@@ -699,9 +709,15 @@ padding-bottom: 5px;
   border-left-style: solid;
   border-color: var(--secondary);
   border-width: 5px;
-  margin-left: auto;
-  padding-left: 10px;
-  min-width: 300px;
+  margin-left: 0px;
+  padding-left: 30px;
+  margin-right: auto;
+  overflow-wrap: break-word;
+}
+
+.details{
+  padding-left: 30px;
+  width: 600vw;
 }
 
 .sectionR a{
@@ -720,23 +736,18 @@ padding-bottom: 5px;
   color: var(--primarylight);
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 768px) {
 .sectionR img{
   display: none;
 }
-
-.sectionR{
-  max-height: 100vh;
+.sectionR img.leftimg{
+  display: none;
 }
 }
 
 @media screen and (max-width: 768px) {
-  .details{
-    display: none;
-  }
   
   .sectionM{
-    display: flex;
     max-height: 100vh;
   }
 
@@ -745,7 +756,8 @@ padding-bottom: 5px;
   }
 
   .team{
-    margin-left: 0px;
+
+    max-width: 90vw;
   }
 }
 
