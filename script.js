@@ -38,7 +38,7 @@ moveright = function(){
   }
 }
 
-let refreshInterval = setInterval(()=> {moveright()}, 3000);
+let refreshInterval = setInterval(()=> {moveright()}, 10000);
 
 function reloadSlider(){
     slider.style.left = -items[active].offsetLeft + 'px';
@@ -47,7 +47,7 @@ function reloadSlider(){
     dots[active].classList.add('active');
 
     clearInterval(refreshInterval);
-    refreshInterval = setInterval(()=> {moveright()}, 3000);
+    refreshInterval = setInterval(()=> {moveright()}, 10000);
 }
 
 dots.forEach((li, key) => {
