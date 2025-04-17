@@ -1145,6 +1145,16 @@ footer {
   display: none;
 }
 
+.bonusme{
+  text-align: center;
+  margin: auto;
+}
+
+.bonusme h2{
+  color: var(--secondary);
+  font-size: 2em;;
+}
+
 @media screen and (max-width: 768px) {
   .aboutmefoto{
     display: none;
