@@ -78,19 +78,6 @@ header nav a:hover {
 }
 
 /* Menu toggle button for mobile */
-/*
-.menu-toggle {
-    display: none;
-    font-size: 2rem;
-    background: none;
-    border: none;
-    color: var(--white);
-    cursor: pointer;
-    position: absolute;
-    right: 2rem;
-    top: 1rem;
-}
-    */
 
 .blurred {
     -webkit-filter: blur(5px);
@@ -664,19 +651,25 @@ width: auto;
   overflow-wrap: break-word;
 }
 
-.detailimages{
-  position: relative;
-  right: 0px;
-}
-
 .sectionR img {
   display: block;
-  width: 100%;
   border-radius: 8px;
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
   object-fit: cover;
 }
+
+.detailimages{
+  position: relative;
+  right: 0px;
+  width: 50vw;
+}
+
+.detailimages img{
+  width: 100%;
+}
+
+
 
 
 
@@ -717,7 +710,8 @@ padding-bottom: 5px;
 
 .details{
   padding-left: 30px;
-  width: 600vw;
+  width: 75vw;
+  padding-right: 10px;
 }
 
 .sectionR a{
