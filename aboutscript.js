@@ -102,7 +102,7 @@ var iterator = new NumberIterator();
 //Configure waypoints
 iterator.goals = [unyears - 48];
 
-iterator.delay = 1000 / iterator.goals[0];
+iterator.delay = 750 / iterator.goals[0];
 //On step callback
 iterator.onstep = function(num) {
     div.innerHTML = num;
@@ -125,4 +125,4 @@ iterator2.onstep = function(num) {
     div2.innerHTML = num + "+";
 }
 //Start the thingy
-setTimeout(function() { iterator2.start(); }, 500);
+//setTimeout(function() { iterator2.start(); }, 500);

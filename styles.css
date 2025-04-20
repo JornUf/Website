@@ -1131,6 +1131,18 @@ footer {
 
 }
 
+.pullquote {
+  font-style: italic;
+  font-size: 1.2rem;
+  margin: 1.5em 1em;
+  padding: 1em 1em;
+  border-left: 4px solid #D7942E; /* your signature gold-orange */
+  background-color: rgba(255, 255, 255, 0.05); /* subtle contrast */
+  border-radius: 0px;
+}
+
+
+
 .aboutmefoto{
   width: 30% !important;
 }
@@ -1142,6 +1154,7 @@ footer {
 .bonusme{
   text-align: center;
   margin: auto;
+  padding: 0 1em;
 }
 
 .bonusme h2{
