@@ -1,7 +1,7 @@
 :root {
-    --primary: #235031;
-    --primarylight: #2e7725;
-    --primarydark: #1a3723;
+    --primary: #2b6b25;
+    --primarylight: #31742a;
+    --primarydark: #25631f;
 
     --primaryover: rgba(26 55 35 1);
 
@@ -20,7 +20,7 @@ body {
     padding: 0;
     line-height: 1.6;
     color: var(--black);
-    background-color: var(--white);
+    background-image: url(images/whitepattern\ 250.png);
 }
 
 a:-webkit-any-link {
@@ -606,7 +606,8 @@ width: auto;
     padding: 0rem;
     display: flex;
     align-items: center;
-    background-color: var(--primary);
+    background-image: url(images/finalpattern\ 250.png);
+
     color: var(--white);
     object-fit: cover;
     box-shadow: 0px 1px 10px 1px var(--black);
@@ -1054,6 +1055,7 @@ padding-bottom: 5px;
 
 footer {
     background: var(--black);
+    background-image: url(images/transpattern\ 250.png);
     color: var(--white);
     text-align: center;
     padding: 1rem 0;
@@ -1145,6 +1147,7 @@ footer {
 
 .aboutmefoto{
   width: 30% !important;
+
 }
 
 .aboutmefotomobile{
