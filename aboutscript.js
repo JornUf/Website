@@ -100,7 +100,7 @@ var div = document.getElementById("unexp");
 //Set up ne instance of that class
 var iterator = new NumberIterator();
 //Configure waypoints
-iterator.goals = [unyears - 48];
+iterator.goals = [unyears - 50];
 
 iterator.delay = 750 / iterator.goals[0];
 //On step callback
